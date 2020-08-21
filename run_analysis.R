@@ -7,22 +7,22 @@ library(dplyr)
 
 
 # Getting activity and features
-features <- read.table("./project/features.txt")
-activity <- read.table("./project/activity_labels.txt")
+features <- read.table("./features.txt")
+activity <- read.table("./activity_labels.txt")
 activity <- rename(activity, "activity" = V2)
 
 # Extracting variable for final table from features
 variables <- as.character(features$V2)
 
 # Retrieving Train data
-train_sub <- read.table("./project/train/subject_train.txt")
-trainX <- read.table("./project/train/X_train.txt")
-trainy <- read.table("./project/train/y_train.txt")
+train_sub <- read.table("./train/subject_train.txt")
+trainX <- read.table("./train/X_train.txt")
+trainy <- read.table("./train/y_train.txt")
 
 # Retrieving Test data
-test_sub <- read.table("./project/test/subject_test.txt")
-testX <- read.table("./project/test/X_test.txt")
-testy <- read.table("./project/test/y_test.txt")
+test_sub <- read.table("./test/subject_test.txt")
+testX <- read.table("./test/X_test.txt")
+testy <- read.table("./test/y_test.txt")
 
 # Combining TRAIN data tables
 train_combined <- cbind(train_sub, trainX, trainy)
