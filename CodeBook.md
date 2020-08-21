@@ -7,7 +7,7 @@ The TRAIN dataset consists of 3 files: `subject_train.txt, X_train.txt, y_train.
 The TEST dataset also consists of 3 similar files: `subject_test.txt, X_test.txt, y_test.txt`.
 The subject files contain values of the the subject, the X files contain the results of the experiments, and y files contain the activity labels.
 
-## New Variables
+## Variables In New Data
     "Subject" - Numbers representing each participant.
     "Activity" - The activity the participant was engaing in .
     "tBodyAcc-mean()-X"           
@@ -76,4 +76,3 @@ The subject files contain values of the the subject, the X files contain the res
     "fBodyBodyGyroMag-std()"     
     "fBodyBodyGyroJerkMag-mean()" 
     "fBodyBodyGyroJerkMag-std()"
- 
